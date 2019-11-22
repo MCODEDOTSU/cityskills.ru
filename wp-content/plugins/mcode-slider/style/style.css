@@ -1,0 +1,188 @@
+.mcode-slider {
+    display: block;
+    width: 100%;
+    height: 300px; /* options */
+    overflow: hidden;
+    position: relative;
+}
+
+.mcode-slider .mcode-slider-item {
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    overflow: hidden;
+    border-top-left-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    -webkit-transition: all 0s linear .4s, z-index 0s;
+    -moz-transition: all 0s linear .4s, z-index 0s;
+    -o-transition: all 0s linear .4s, z-index 0s;
+    transition: all 0s linear .4s, z-index 0s;
+    z-index: 1;
+}
+
+.mcode-slider .mcode-slider-item:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.mcode-slider .mcode-slider-item.current {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    border-top-left-radius: 0;
+    -webkit-transition: all .3s linear, border-top-left-radius .1s linear .3s, opacity .4s linear, z-index 0s;
+    -moz-transition: all .3s linear, border-top-left-radius .1s linear .3s, opacity .4s linear, z-index 0s;
+    -o-transition: all .3s linear, border-top-left-radius .1s linear .3s, opacity .4s linear, z-index 0s;
+    transition: all .3s linear, border-top-left-radius .1s linear .3s, opacity .4s linear, z-index 0s;
+    z-index: 2;
+}
+
+.mcode-slider h2 {
+    text-align: left;
+    margin: 2em 0 0.7em;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1.2;
+    color: #ffffff;
+    position: static;
+    display: inline-block;
+    width: auto;
+}
+
+.mcode-slider h2 span {
+    padding: 0 20px 8px;
+    margin-top: -4px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.mcode-slider h3 {
+    font-size: 1.5em;
+    margin-bottom: 80px;
+    color: #ffffff;
+    position: static;
+    text-align: left;
+    display: inline-block;
+}
+
+.mcode-slider .description {
+    display: inline-block;
+    width: 50%;
+}
+
+.mcode-slider .action {
+    display: block;
+}
+
+.mcode-slider .action a {
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #72608a;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.mcode-slider .pages {
+    position: absolute;
+    top: calc(50% - 80px);
+    right: calc((100% - 1200px) / 2);
+    width: 80px;
+    height: 80px;
+    z-index: 3;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mcode-slider .pages .page {
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.mcode-slider .pages .page:hover {
+    opacity: 0.8;
+}
+
+.mcode-slider .pages .page:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.mcode-slider .pages .page.current {
+    display: block;
+}
+
+.mcode-slider .pages .btn {
+    left: 50%;
+    background: #ffffff;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: -14px 0 0 -14px;
+    text-align: center;
+    padding: 3px 0 3px 3px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.mcode-slider .pages .page:hover .btn {
+    opacity: 0.25;
+}
+
+.mcode-slider .pages .btn i {
+    font-size: 10px;
+}
+
+.mcode-slider .mcode-slider-loader {
+    display: none;
+}
+
+.mcode-slider .pages .loader {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+}

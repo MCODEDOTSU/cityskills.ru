@@ -1,0 +1,57 @@
+.centerastrakhan-persons h1 {
+    margin: 0 0 20px;
+}
+
+.centerastrakhan-persons .person-edit-dialog {
+    display: none;
+}
+
+.centerastrakhan-persons .person-edit-dialog.visibility {
+    display: table-row;
+}
+
+.centerastrakhan-persons input {
+    width: 100%;
+}
+
+.centerastrakhan-persons .person-edit-dialog tr td:first-child {
+    width: 150px;
+}
+
+.centerastrakhan-persons .person-edit-dialog tr td:nth-child(2) {
+    width: 100px;
+}
+
+.centerastrakhan-persons textarea {
+    width: 100%;
+    height: 200px;
+}
+
+.centerastrakhan-persons .notice {
+    display: none;
+}
+
+.centerastrakhan-persons .image-container {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.centerastrakhan-persons .image-container img {
+    width: 100%;
+}
+
+.centerastrakhan-persons .person-image-container .add-image {
+    margin: 5px 0 0 0;
+    text-align: center;
+}
+
+.centerastrakhan-persons .person-image-container .delete-image {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    font-size: 10px;
+}

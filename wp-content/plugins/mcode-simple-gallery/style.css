@@ -1,0 +1,108 @@
+.mcode-gallery {
+    display: block;
+    width: 100%;
+    padding: 40px 45px;
+    position: relative;
+}
+
+.mcode-gallery > .container {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.mcode-gallery .gallery-items {
+    white-space: nowrap;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.mcode-gallery .gallery-item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+}
+
+.mcode-gallery .gallery-item dt {
+    height: 300px;
+}
+
+.mcode-gallery .gallery-item dd {
+    white-space: normal;
+    display: block;
+    font-size: 12px;
+    color: #969696;
+    text-align: center;
+}
+
+.mcode-gallery .gallery-item img {
+    -webkit-box-shadow: 8px 10px 18px rgba(0, 0, 0, 0.15);
+    box-shadow: 8px 10px 18px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.mcode-gallery .gallery-item:hover img {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 10px 12px 20px rgba(0, 0, 0, 0.22);
+    box-shadow: 10px 12px 20px rgba(0, 0, 0, 0.22);
+}
+
+.mcode-gallery .btn {
+    position: absolute;
+    top: 140px;
+    width: 40px;
+    height: 100px;
+    background: #00000088;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 8px 10px 18px rgba(0, 0, 0, 0.15);
+    box-shadow: 8px 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+.mcode-gallery .btn:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -8px 0 0 -3px;
+}
+
+.mcode-gallery:hover .btn {
+    background: #000000aa;
+}
+
+.mcode-gallery .btn:hover {
+    background: #000000cc;
+    -webkit-box-shadow: 10px 12px 20px rgba(0, 0, 0, 0.22);
+    box-shadow: 10px 12px 20px rgba(0, 0, 0, 0.22);
+}
+
+.mcode-gallery .btn-prev {
+    left: 0;
+}
+
+.mcode-gallery .btn-next {
+    right: 0;
+}
+
+/***
+Responsive
+ */
+
+@media only screen and (max-width: 1000px) {
+    .mcode-gallery .gallery-item dt {
+        width: 200px;
+        height: 200px;
+    }
+    .mcode-gallery .btn {
+        top: 90px;
+    }
+}

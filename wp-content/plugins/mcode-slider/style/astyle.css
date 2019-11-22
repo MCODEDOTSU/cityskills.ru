@@ -1,0 +1,161 @@
+#slidersettings {
+    max-width: 800px;
+}
+
+#slidersettings .row-actions button {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    padding: 0;
+    margin: 5px 0;
+    cursor: pointer;
+    color: #0073aa;
+}
+
+#slidersettings h1 {
+    margin: 0 0 20px;
+}
+
+#slidersettings input {
+    padding: 3px 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    height: 1.7em;
+    width: 100%;
+    outline: 0;
+    margin: 0 0 10px 0;
+    background-color: #fff;
+}
+
+#slidersettings textarea {
+    padding: 3px 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 100%;
+    outline: 0;
+    margin: 0 0 10px 0;
+    background-color: #fff;
+    height: 100px;
+    resize: none;
+}
+
+#slidersettings label {
+    font-size: 1.2em;
+    line-height: 100%;
+    margin: 10px 0;
+    display: block;
+}
+
+#slidersettings .btn {
+    padding: 10px;
+    margin: 20px 0;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background: #f7f7f7;
+    font-size: 13px;
+    color: #0073aa;
+    cursor: pointer;
+    outline: 0;
+}
+
+#slidersettings .btn-success {
+    background: #0073aa;
+    color: #f7f7f7;
+}
+
+#slidersettings .align-right {
+    text-align: right;
+}
+
+#slider-items-list .slider-item {
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    vertical-align: top;
+    margin: 0 0 40px;
+}
+
+#slider-items-list .field-title {
+    display: inline-block;
+    width: 150px;
+    margin: 0 -154px 10px 0;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#slider-items-list .field {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    vertical-align: middle;
+    padding: 0 0 0 160px;
+    box-sizing: border-box;
+    margin: 0 0 10px 0;
+}
+
+#slider-items-list .field input,
+#slider-items-list .field textarea {
+    margin: 0;
+}
+
+#slider-items-list .item-delete {
+    display: none;
+}
+
+#slider-items-list .btn {
+    border: none;
+    background: none;
+    text-decoration: underline;
+    float: right;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+#slider-items-list .image-container {
+    width: 300px;
+    height: 250px;
+    margin: 0 -304px 0 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+#slider-items-list .fields-container {
+    width: 100%;
+    padding: 0 0 0 320px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#slider-items-list .image-container img {
+    width: 100%;
+}
+
+#slider-items-list .image-container .btn {
+    border: none;
+    background: none;
+    text-decoration: underline;
+}
+
+#slider-items-list .image-container .btn.delete-image {
+    position: absolute;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    top: 10px;
+    right: 10px;
+}
+
+#slider-items-list .select-image {
+    width: 100%;
+    height: 48px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}

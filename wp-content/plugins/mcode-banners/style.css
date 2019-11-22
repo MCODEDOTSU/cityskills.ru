@@ -1,0 +1,72 @@
+.mcode-simple-banner.banner-icon {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.mcode-simple-banner.banner-icon a {
+    text-decoration: none;
+}
+
+.mcode-simple-banner.banner-icon .icon-container {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.mcode-simple-banner.banner-icon .icon-container img {
+    width: 48px;
+    height: 48px;
+}
+
+.mcode-simple-banner.banner-icon h3 {
+    margin: 0 0 5px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.mcode-simple-banner.banner-icon .link {
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.mcode-simple-banner.banner-background {
+    background-size: cover;
+    padding: 20px;
+}
+
+.mcode-simple-banner.banner-background a {
+    text-decoration: none;
+}
+
+.mcode-simple-banner.banner-background h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+.mcode-simple-banner.banner-background h4 {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.mcode-simple-banner.banner-background .link {
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    color: #ffffff;
+    margin: 20px 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 7px;
+    text-align: center;
+    font-size: 24px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+                       
